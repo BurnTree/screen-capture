@@ -4,16 +4,18 @@ import ScreenshotDecorator from "./ScreenshotDecorator";
 import {FaBell} from "react-icons/all";
 
 class Header extends Component {
-
-    state = {
-        setIsOpen: false
+    constructor(props) {
+        super(props)
+        this.state = {
+            setIsOpen: false
+        }
     }
-
 
     render() {
         return (
             <div>
-                <Button className="float-right mx-5 my-2" color="primary" onClick={() => this.props.openModal()}><FaBell/></Button>
+                <Button className="float-right mx-5 my-2" color="primary"
+                        onClick={() => this.props.openModal()}><FaBell/></Button>
                 <br/>
                 {this.props.modalWindow()}
             </div>

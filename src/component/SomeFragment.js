@@ -40,7 +40,7 @@ class SomeFragment extends Component {
                 </h1>
                 <Button onClick={this.notifyError}>Its button for test</Button>
                 <br/>
-                <img src={fair} alt="fair photo"/>
+                {/*<img src={fair} alt="fair photo"/>*/}
 
             </div>
         );
